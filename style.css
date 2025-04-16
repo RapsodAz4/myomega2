@@ -5,14 +5,13 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: center;
 }
 
 h1, h2 {
-
     margin: 25px;
     padding: 10px;
 }
@@ -28,18 +27,16 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .imageRandom {
-    height: 450px;
-    width: 380px;
+    height: auto;
+    width: 100%;
+    max-width: 380px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     display: flex;
-   
-    
 }
 
 button {
@@ -51,6 +48,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -66,4 +64,55 @@ button:active {
     font-style: italic;
     color: #ddd;
     margin-top: 10px;
+}
+
+/* ===================== */
+/* 🎯 RESPONSIVE STYLES */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .imageRandom {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .imageRandom {
+        max-width: 100%;
+        height: auto;
+    }
 }

@@ -1,11 +1,11 @@
 const images = [
-    'AQUA.png',
-    'AZUL.png',
-    'MORADITO.png',
-    'MORADO.png',
-    'MOSTAZA.png',
-    'MOSTAZAQUEMADA.png',
-    'VERMELLON.png'
+    'AQUA.PNG',
+    'AZUL.PNG',
+    'MORADITO.PNG',
+    'MORADO.PNG',
+    'MOSTAZA.PNG',
+    'MOSTAZAQUEMADA.PNG',
+    'VERMELLON.PNG'
 ];
 
 const phrases = [
